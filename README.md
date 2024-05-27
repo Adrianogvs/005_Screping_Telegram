@@ -24,18 +24,63 @@ telegram_scraper/</br>
 
 
 
-
-
-
 ## Configuração
+Certifique-se de ter o Python instalado em sua máquina.
 
-1. Clone o repositório.
-2. Crie um ambiente virtual e ative-o:
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # Para Windows: venv\Scripts\activate
+1. Clone o repositório para sua máquina local:
+```bash
+git clone https://github.com/seu_usuario/005_Screping_Telegram.git
+```
 
-# 005_Screping_Telegram
+2. Navegue até o diretório do projeto:
+```bash
+cd 005_Screping_Telegram
+```
+
+3. Crie um ambiente virtual Python usando o venv:
+```bash
+python -m venv .venv
+```
+
+4. Ative o ambiente virtual:
+```bash Windows
+.venv\Scripts\activate
+```
+```bash Linux
+source .venv/bin/activate
+```
+
+5. Instale as dependências do projeto:
+```basic
+pip install -r requirements.txt
+```
+
+6. Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis de ambiente:
+```makefile
+API_ID=sua_api_id
+API_HASH=sua_api_hash
+PHONE_NUMBER=seu_numero_de_telefone
+```
+
+7. Substitua sua_api_id, sua_api_hash e seu_numero_de_telefone pelos valores apropriados. Você pode obter a API_ID e API_HASH aqui após criar um aplicativo Telegram.
+
+8. Uso
+Execute o script principal main.py:
+
+```bash
+python src/main.py
+```
+
+#### Siga as instruções no terminal para autenticar sua conta e selecionar o grupo do qual deseja extrair mensagens.
+
+#### Os resultados serão salvos no arquivo data/messages.csv.
+
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+Este projeto está licenciado sob a MIT License.
+
 
 ## Tipos de commit e suas descrições
 | Tipo       | Descrição                                                              |
