@@ -79,7 +79,7 @@ python src/main.py
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 ## Licença
-Este projeto está licenciado sob a MIT License.
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 
 ## Tipos de commit e suas descrições
