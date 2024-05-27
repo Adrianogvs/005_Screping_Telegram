@@ -11,16 +11,19 @@ telegram_scraper/</br>
 │   └── messages.csv</br>
 ├── src/</br>
 │   ├── __init__.py</br>
-│   ├── main.py </br>
-│   ├── telegram_scraper.py</br>
+│   ├── etl.py</br>
+│   ├── analytics.py</br>
+│   └── main.py</br>
 ├── tests/</br>
 │   ├── __init__.py</br>
-│   └── test_telegram_scraper.py</br>
+│   ├── test_etl.py</br>
+│   └── test_analytics.py</br>
 ├── .env</br>
 ├── .gitignore</br>
 ├── requirements.txt</br>
 ├── README.md</br>
 └── setup.py</br>
+
 
 
 
