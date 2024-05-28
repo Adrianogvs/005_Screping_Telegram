@@ -57,9 +57,13 @@ pip install -r requirements.txt
 
 6. Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis de ambiente:
 ```makefile
-API_ID=sua_api_id
-API_HASH=sua_api_hash
-PHONE_NUMBER=seu_numero_de_telefone
+API_ID=seu_id
+API_HASH=seu_hash
+PHONE_NUMBER=seu_telefone
+USERNAME=nome_do_boot
+START_DATE=2024-05-01T00:00:00 #neste formato
+END_DATE=2024-05-31T23:59:59   #neste formato
+GROUP_URL=link_grupo
 ```
 
 7. Substitua sua_api_id, sua_api_hash e seu_numero_de_telefone pelos valores apropriados. Você pode obter a API_ID e API_HASH aqui após criar um aplicativo Telegram.
