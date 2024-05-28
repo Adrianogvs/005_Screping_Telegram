@@ -1,12 +1,12 @@
 import os
 import csv
+import asyncio
 from telethon.errors import SessionPasswordNeededError
 from dotenv import load_dotenv
 from datetime import datetime
 from tqdm import tqdm
 from telegram_client import TelegramScraper
 from config import Config
-import asyncio
 
 load_dotenv()
 
@@ -27,8 +27,13 @@ async def main():
 
     messages = await scraper.fetch_messages(group)  # Aguarda a execução da coroutine
 
+    # Verificar e criar a pasta 'data' se não existir
+    data_folder = os.path.join(os.path.dirname(__file__), '..', 'data')
+    if not os.path.exists(data_folder):
+        os.makedirs(data_folder)
+
     # Salvar mensagens em um arquivo CSV na pasta 'data'
-    csv_file_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'messages.csv')
+    csv_file_path = os.path.join(data_folder, 'messages.csv')
     with open(csv_file_path, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(["date", "sender_id", "message"])
