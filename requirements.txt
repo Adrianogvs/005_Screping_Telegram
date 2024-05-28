@@ -8,3 +8,4 @@ six==1.16.0
 Telethon==1.35.0
 tqdm==4.66.4
 requests==2.26.0
+pystet==X.Y.Z

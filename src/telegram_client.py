@@ -28,7 +28,7 @@ class TelegramScraper:
     async def get_group_entity(self):
         return await self.client.get_entity(self.group_url)
 
-    async def fetch_messages(self, group, max_messages=1000):
+    async def fetch_messages(self, group, max_messages=1000000):
         offset_id = 0
         limit = 100
         all_messages = []
