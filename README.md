@@ -32,7 +32,7 @@ Certifique-se de ter o Python instalado em sua máquina.
 
 1. Clone o repositório para sua máquina local:
 ```bash
-git clone https://github.com/seu_usuario/005_Screping_Telegram.git
+git clone https://github.com/Adrianogvs/005_Screping_Telegram.git
 ```
 
 2. Navegue até o diretório do projeto:
@@ -47,10 +47,7 @@ python -m venv .venv
 
 4. Ative o ambiente virtual:
 ```bash Windows
-.venv\Scripts\activate
-```
-```bash Linux
-source .venv/bin/activate
+source .venv/Scripts/activate
 ```
 
 5. Instale as dependências do projeto:
